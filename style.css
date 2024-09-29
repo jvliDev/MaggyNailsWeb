@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Atteron";
+  src: local("Atteron Personal Use"), url("Atteron.ttf") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand"), url("Quicksand-Regular.ttf") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend"), url("Lexend-Regular.ttf") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* * Defaut styles Fonts */
+h1 {
+  font-family: Outfit;
+  font-size: 4rem;
+}
+h3 {
+  font-family: Quicksand Regular;
+  font-size: 1rem;
+}
+p {
+  font-family: Lexend;
+  font-size: 1rem;
+}
+
+body {
+  header {
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+    column-gap: 1.5rem;
+
+    /* * The following elements add the gradient separator to the header */
+
+    border-color: rgba(234, 234, 234, 1);
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6);
+
+    /* //Font-styles */
+    img {
+      width: 3.5rem;
+    }
+    h1 {
+      font-family: Atteron Personal Use;
+      font-size: 1.8rem;
+    }
+  }
+
+  main {
+    .presentation {
+      .izq {
+        width: 49.99999%;
+
+        float: left;
+        align-items: end;
+        img {
+          height: 70vh;
+        }
+      }
+      .der {
+        width: 49.99999%;
+        float: left;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        text-align: right;
+
+        h1 {
+          font-family: Outfit;
+          font-size: 4rem;
+          padding-right: 3rem;
+        }
+        p {
+          margin-top: 1rem;
+          align-items: center;
+          padding-right: 3rem;
+          font-size: 1rem;
+          line-height: 1.8rem;
+        }
+        a{
+          background-color: black;
+          font-family: Urbanist;
+          text-decoration: none;
+          color: white;
+          border-radius: 10px;
+          padding: 1rem;
+          margin: 1.5rem;
+          font-size: 1.2rem;
+          margin-right: 3.5rem;
+        }
+      }
+    }
+    .presentation,
+    .izq,
+    .der {
+      display: flex;
+      height: 90vh;
+    }
+
+    .marcas{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      h1{
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      img{
+        height: 4rem;
+        margin: 1rem;
+      }
+      .img-container{
+        margin: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
