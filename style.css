@@ -1,139 +1,174 @@
-* {
-  margin: 0;
-  padding: 0;
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/** Fuentes utilizadas por la pagina*/
+@font-face {
+    font-family: "Quicksand";
+    src: local("Quicksand"), url("Quicksand-Regular.ttf") format("woff");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: "Atteron";
-  src: local("Atteron Personal Use"), url("Atteron.ttf") format("woff");
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Atteron";
+    src: local("Atteron Personal Use"), url("Atteron.ttf") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Lexend";
+    src: local("Lexend"), url("Lexend-Regular.ttf") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Urbanist";
+    src: local("Urbanist"), url("fonts/Urbanist-Regular.ttf") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Outfit";
+    src: local("Outfit"), url("fonts/Outfit-Regular.ttf") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+/** root: variables comunes usadas a lo largo del codigo */
+:root{
+    --normal-font: Quicksand;
+    --MN-font: Atteron;
+    --fuente: Urbanist;
 }
 
-@font-face {
-  font-family: "Quicksand";
-  src: local("Quicksand"), url("Quicksand-Regular.ttf") format("woff");
-  font-style: normal;
-  font-weight: normal;
+/**  Configuracion general de los estilos de fuente de la pagina*/
+a, p{
+    font-family: var(--normal-font);
 }
 
-@font-face {
-  font-family: "Lexend";
-  src: local("Lexend"), url("Lexend-Regular.ttf") format("woff");
-  font-style: normal;
-  font-weight: normal;
+#MN-Text {
+  font-family: var(--MN-font);
+  font-size: 1.8rem;
+}
+#MN-Complement-text{
+    font-family: var(--normal-font);
+    font-size: 1rem;
 }
 
-/* * Defaut styles Fonts */
-h1 {
-  font-family: Outfit;
-  font-size: 4rem;
-}
-h3 {
-  font-family: Quicksand Regular;
-  font-size: 1rem;
-}
-p {
-  font-family: Lexend;
-  font-size: 1rem;
-}
 
-body {
-  header {
+/** Configuracion de estilo*/
+body{
+    background-color:rgb(241, 241, 236);
+}
+header {
     background-color: ghostwhite;
     display: flex;
     flex-direction: row;
+    
+    .MN-cont{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.1rem;
     column-gap: 1.5rem;
+    }
+    
 
     /* * The following elements add the gradient separator to the header */
+
+    border-color: rgb(218, 218, 218);
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    
+
+    /* //Font-styles */
+    img {
+      width: 3.5rem;
+    }
+    
+}
+
+nav{
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-around;
+
+    a{
+        text-decoration: none;
+        font-size: 1.01em;
+        font-weight: 600;
+        color: black;
+        
+        align-items: center;
+        
+    }
+    padding: 1em;
 
     border-color: rgba(234, 234, 234, 1);
     border-bottom-width: 1px;
     border-top-width: 0px;
     border-bottom-style: solid;
     border-top-style: solid;
-    box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.6);
-
-    /* //Font-styles */
-    img {
-      width: 3.5rem;
-    }
-    h1 {
-      font-family: Atteron Personal Use;
-      font-size: 1.8rem;
-    }
-  }
-
-  main {
-    .presentation {
-      .izq {
-        width: 49.99999%;
-
-        float: left;
-        align-items: end;
-        img {
-          height: 70vh;
-        }
-      }
-      .der {
-        width: 49.99999%;
-        float: left;
-        flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        text-align: right;
-
-        h1 {
-          font-family: Outfit;
-          font-size: 4rem;
-          padding-right: 3rem;
-        }
-        p {
-          margin-top: 1rem;
-          align-items: center;
-          padding-right: 3rem;
-          font-size: 1rem;
-          line-height: 1.8rem;
-        }
-        a{
-          background-color: black;
-          font-family: Urbanist;
-          text-decoration: none;
-          color: white;
-          border-radius: 10px;
-          padding: 1rem;
-          margin: 1.5rem;
-          font-size: 1.2rem;
-          margin-right: 3.5rem;
-        }
-      }
-    }
-    .presentation,
-    .izq,
-    .der {
-      display: flex;
-      height: 90vh;
-    }
-
-    .marcas{
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      h1{
-        font-size: 2.5rem;
-        text-align: center;
-      }
-      img{
-        height: 4rem;
-        margin: 1rem;
-      }
-      .img-container{
-        margin: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
+    box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
 }
+.presentation {
+    .der {
+      width: 49.99999%;
+      float: left;
+      align-items: end;
+      img {
+        height: 70vh;
+      }
+    }
+    .izq {
+      width: 49.99999%;
+      float: left;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      text-align: left;
+
+      .pres-izq-cont{
+        margin-left: 3.5rem;
+      }
+
+      h1 {
+        font-family: Outfit;
+        font-size: 4rem;
+        padding-right: 3rem;
+      }
+      p {
+        margin-top: 1rem;
+        align-items: center;
+        padding-right: 3rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+      }
+      a{
+        background-color: black;
+        font-family: var(--fuente);
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+        padding: 0.7rem 1rem 0.7rem 1rem;
+        font-size: 1.2rem;
+        
+      }
+    }
+  }
+  .presentation,
+  .izq,
+  .der {
+    display: flex;
+    height: 70vh;
+  }
+
+
