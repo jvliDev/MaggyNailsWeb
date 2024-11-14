@@ -33,3 +33,8 @@
     font-style: normal;
     font-weight: normal;
   }
+  @font-face {
+    font-family: "Work Sans";
+    src: local("Work Sans"), url("WorkSans-VariableFont_wght.ttf") format("woff");
+    font-style: normal;
+  }
