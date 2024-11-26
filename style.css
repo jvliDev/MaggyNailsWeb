@@ -31,12 +31,37 @@ p {
   text-decoration: none;
   color: black;
 }
-
+h1, h2{
+  font-family: Montserrat;
+  color: #363636;
+}
+p{
+  font-family: WorkSans;
+  font-weight: 500;
+  color: #3b3939;
+}
 /** Configuracion de estilo*/
 
 body {
   background-color: rgb(231, 231, 226);
   font-family: OpenSans;
+}
+#myBtn {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  
+  z-index: 999999999999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 90px;
 }
 
 header {
@@ -45,8 +70,10 @@ header {
   background-color: ghostwhite;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
-  transition: top 0.3s;
+  height: 6rem;
+  transition: 0.3s;
   /* * The following elements add the gradient separator to the header */
 
   border-color: rgb(218, 218, 218);
@@ -54,17 +81,20 @@ header {
   border-top-width: 0px;
   border-bottom-style: solid;
   border-top-style: solid;
+  
 
   /* //Font-styles */
   img {
-    width: 3.5rem;
+    width: 3rem;
+    transition: 0.3s;
   }
 
   .MN-cont {
+    transition: top 0.3ms;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.8rem;
+    margin: 1rem;
     column-gap: 1.5rem;
 
     .MN-text-cont {
@@ -81,7 +111,7 @@ header {
   border-bottom-style: solid;
   border-top-style: solid;
   box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
 
   nav {
     background-color: ghostwhite;
@@ -92,8 +122,10 @@ header {
     flex: 1;
 
     align-items: center;
-
+    transition: opacity 0.4s ease-in-out, background-color 0.4s ease-in-out;
     a {
+      -webkit-transition: opacity 0.4s ease-in-out, background-color 0.4s ease-in-out;
+      transition: opacity 0.4s ease-in-out, background-color 0.4s ease-in-out;
       text-decoration: none;
       font-size: 1.01em;
       font-weight: 600;
@@ -102,6 +134,9 @@ header {
   }
 }
 
+main{
+  padding-top: 5rem;
+}
 slideshow-galeria {
   
   box-sizing: border-box;
@@ -135,6 +170,10 @@ slideshow-galeria {
     transform: translateX(-10px);
     -webkit-transition: all 0.1.5s ease-in-out;
     transition: all 0.1.5s ease-in-out;
+  }
+  p{
+    font-family: OpenSans;
+    font-weight: 500;
   }
 }
 
@@ -316,6 +355,7 @@ slideshow-galeria {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 0.5rem;
 
     img {
       border-radius: 5px;
@@ -329,9 +369,13 @@ slideshow-galeria {
 }
 
 .mapa {
+  text-transform: uppercase;
   .map-container {
-    background-color: rgb(231, 231, 223);
-    padding: 3rem;
+    background-color: rgb(177, 177, 171);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 4rem 8rem 3rem 8rem;
   }
 }
 footer {
