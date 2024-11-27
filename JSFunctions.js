@@ -6,10 +6,24 @@ window.onscroll = function() {
     document.getElementById("navbar").style.height = "6rem";
 
   } else {
-    document.getElementById("navbar").style.height = "5rem";
+    document.getElementById("navbar").style.height = "4.5rem";
   }
   prevScrollpos = currentScrollPos;
 }
+
+window.onload = function() {
+  var image = document.getElementById('fullScreenGradient');
+  
+  //var screenWidth = window.innerWidth;
+  //var screenWidth = document.body.scrollWidth;
+  var screenHeight = window.innerHeight;
+  
+  // Establecer el ancho y alto de la imagen según las dimensiones de la pantalla
+  //image.style.width = screenWidth + 'px';
+  image.style.height = screenHeight + 'px';
+}
+
+
 
 
       let slideIndex = 1;
@@ -43,4 +57,36 @@ window.onscroll = function() {
         dots[slideIndex - 1].className += " active";
       }
 
-      
+      var x = window.innerWidth;
+
+const min_width = 1000;
+
+
+function openNav() {
+
+  x = window.innerWidth;
+  if(x > min_width){
+    document.getElementById("fullScreenGradient").style.display = "block";
+    document.getElementById("mySidenav").style.width = "30%";
+    document.getElementById("main").style.marginLeft = "30%";
+    
+    
+  }else{
+    document.getElementById("myNav").style.height = "100%";
+    
+  }
+    
+}
+
+function closeNav() {
+  x = window.innerWidth;
+  if(x > min_width){
+    document.getElementById("fullScreenGradient").style.display = "none";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    
+  
+  }else{
+    document.getElementById("myNav").style.height = "0%";
+  }
+}

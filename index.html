@@ -9,9 +9,41 @@
     <link rel="shortcut icon" href="media/black-logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <button id="myBtn" style="left: 30px; background-color: rgb(255, 220, 18);" #Carrito"><img src="media/icons8-shopping-cart-black.png" alt="" style="height: 1.5rem; width: 1.5rem"></button>
-    <a id="myBtn" style="right: 30px; background-color: #41b40b;" href="https://api.whatsapp.com/send/?phone=528999841439&text&type=phone_number&app_absent=0"><img src="media/social/icons8-whatsapp-24.png" alt=""></a>
+    <a
+      id="myBtn"
+      style="right: 30px; background-color: #41b40b"
+      href="https://api.whatsapp.com/send/?phone=528999841439&text&type=phone_number&app_absent=0"
+      ><img src="media/social/icons8-whatsapp-24.png" alt=""
+    /></a>
+    <div class="carrito">
+      <button
+        onclick="openNav()"
+        id="myBtn"
+        style="left: 30px; background-color: rgb(255, 220, 18)"
+      >
+        <img
+          src="media/icons8-shopping-cart-black.png"
+          alt=""
+          style="height: 1.5rem; width: 1.5rem"
+        />
+      </button>
 
+      <div id="mySidenav" class="carritoSidenav">
+        
+        <div class="carrito-top">
+          <div class="carrito-title">
+            <p>Carrito de compras</p>
+            <img src="media/icons8-shopping-cart-black.png" alt="">
+          </div>
+          <div class="close-carrito">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fullScreenGradient"></div>
+    
     <header id="navbar">
       <a href="">
         <div class="MN-cont">
@@ -29,7 +61,6 @@
         <a id="nav-link" href="#Efectos">Geles Semipermanentes</a>
         <a id="nav-link" href="#Pedicure">Pedicure</a>
         <a id="nav-link" href="#Herramientas">Herramientas</a>
-        
       </nav>
     </header>
 
@@ -42,9 +73,7 @@
             <div class="cont-slide-text">
               <div class="cont-slide-textContainer">
                 <h1>Acrílicos Fantasy</h1>
-                <p>
-                  Conoce los acrílicos 3D de Fantasy Nails
-                </p>
+                <p>Conoce los acrílicos 3D de Fantasy Nails</p>
               </div>
             </div>
             <div class="black-color"></div>
@@ -55,7 +84,10 @@
             <div class="cont-slide-text">
               <div class="cont-slide-textContainer">
                 <h1>Electrónicos</h1>
-                <p>Lamparas UV, Drilles y Aspiradores de polvo de la mejor calidad.</p>
+                <p>
+                  Lamparas UV, Drilles y Aspiradores de polvo de la mejor
+                  calidad.
+                </p>
               </div>
             </div>
             <div class="black-color"></div>
@@ -66,7 +98,9 @@
             <div class="cont-slide-text">
               <div class="cont-slide-textContainer">
                 <h1>Geles Semipermamentes</h1>
-                <p>Mussa, Kalanzy, Miss Cherry. ¡Tus marcas favoritas estan aquí!</p>
+                <p>
+                  Mussa, Kalanzy, Miss Cherry. ¡Tus marcas favoritas estan aquí!
+                </p>
               </div>
             </div>
             <div class="black-color"></div>
@@ -159,11 +193,22 @@
       </section>
       <section class="mapa">
         <div class="map-container">
-          <h1 style="display: flex; align-items: center; justify-content: center; padding-bottom: 1rem">¡Visítanos!</h1>
-          <div id="map" style="width: 100%; height: 400px; border-radius: 10px;"></div>
+          <h1
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-bottom: 1rem;
+            "
+          >
+            ¡Visítanos!
+          </h1>
+          <div
+            id="map"
+            style="width: 100%; height: 400px; border-radius: 10px"
+          ></div>
         </div>
       </section>
-      
 
       <!-- Script de Google Maps -->
       <script>
@@ -211,16 +256,30 @@
                 <h3>CONÓCENOS</h3>
                 <div class="social-container">
                   <div class="social-cont" id="facebook-cont">
-                    <a href="https://www.facebook.com/maggynails.store"><img src="media/social/icons8-facebook-f-50.png" alt=""></a>
+                    <a href="https://www.facebook.com/maggynails.store"
+                      ><img src="media/social/icons8-facebook-f-50.png" alt=""
+                    /></a>
                   </div>
                   <div class="social-cont" id="instagram-cont">
-                    <a href="https://www.facebook.com/maggynails.store"><img src="media/social/icons8-instagram-logo-24.png" alt=""></a>
+                    <a href="https://www.facebook.com/maggynails.store"
+                      ><img
+                        src="media/social/icons8-instagram-logo-24.png"
+                        alt=""
+                    /></a>
                   </div>
                   <div class="social-cont" id="whatsapp-cont">
-                    <a href="https://api.whatsapp.com/send/?phone=528999841439&text&type=phone_number&app_absent=0"><img src="media/social/icons8-whatsapp-24.png" alt=""></a>
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=528999841439&text&type=phone_number&app_absent=0"
+                      ><img src="media/social/icons8-whatsapp-24.png" alt=""
+                    /></a>
                   </div>
                   <div class="social-cont" id="tiktok-cont">
-                    <a href="https://api.whatsapp.com/send/?phone=528999841439&text&type=phone_number&app_absent=0"><img src="media/social/TikTok-icon-white-symbol-glyph-png-263x300.png" alt=""></a>
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=528999841439&text&type=phone_number&app_absent=0"
+                      ><img
+                        src="media/social/TikTok-icon-white-symbol-glyph-png-263x300.png"
+                        alt=""
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -249,15 +308,19 @@
             <div class="contacto">
               <h1>CONTACTO</h1>
               <p><b>Correo:</b></p>
-              <a href="mailto:MaggyNailsReynosa@proton.me">MaggyNailsReynosa@proton.me</a>
+              <a href="mailto:MaggyNailsReynosa@proton.me"
+                >MaggyNailsReynosa@proton.me</a
+              >
               <p><b>Teléfono:</b> 899 984 1439</p>
-              <p><b>Dirección:</b> Calle General Rodríguez 339, Reynosa, Tamps., México 88780</p>
+              <p>
+                <b>Dirección:</b> Calle General Rodríguez 339, Reynosa, Tamps.,
+                México 88780
+              </p>
             </div>
           </div>
         </div>
       </footer>
     </main>
-
     <script src="JSFunctions.js"></script>
   </body>
 </html>
