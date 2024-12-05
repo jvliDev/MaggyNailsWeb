@@ -56,7 +56,7 @@ body {
   justify-content: center;
   align-items: center;
   bottom: 20px;
-  z-index: 10;
+  z-index: 8;
   font-size: 18px;
   border: none;
   outline: none;
@@ -72,7 +72,7 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index:20;
+  z-index: 10;
   top: 0;
   left: 0;
   background-color: white;
@@ -242,8 +242,6 @@ header {
 main {
   padding-top: 5rem;
 }
-
-/************************************************************************/
 slideshow-galeria {
   box-sizing: border-box;
 }
@@ -534,22 +532,6 @@ slideshow-galeria {
     }
   }
 }
-/***********************************************************************/
-.cell{
-  
-  height: 350px;
-  margin: 0 15px;
-  overflow: hidden;
-  border-radius: 5px;
-  img{
-    width: 100%;
-    height: 350px;
-    object-fit: cover; 
-  }
-  
-}
-
-
 .mapa {
   text-transform: uppercase;
   .map-container {
