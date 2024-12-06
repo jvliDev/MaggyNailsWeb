@@ -1,0 +1,36 @@
+/** Fuentes utilizadas por la pagina*/
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand"), url("assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Atteron";
+  src: local("Atteron"), url("assets/fonts/Atteron.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ceraroundpro";
+  src: local("ceraroundpro"), url("assets/fonts/ceraroundpro-medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+    url("assets/fonts/OpenSans-VariableFont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: local("Kanit"), url("assets/fonts/Kanit-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
