@@ -6,9 +6,10 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
+}
+.navbar , .navbar a , .fa-bars , .shopping-icon{
   transition: 0.2s linear;
 }
-
 /** root: variables comunes usadas a lo largo del codigo */
 :root {
   /* arriba | derecha | abajo | izquierda */
