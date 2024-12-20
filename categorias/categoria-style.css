@@ -1,0 +1,101 @@
+h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+button,
+p {
+  font-family: ProximaNovaRegular;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+}
+
+.section-general-content {
+  padding: 3rem;
+  background-color: blue;
+  .general-content-Title {
+    background-color: green;
+    /* top and bottom | left and right */
+    padding: 2rem 3rem;
+    border-bottom: 1px solid rgb(182, 179, 179);
+  }
+  .section-general-main {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+
+    .filter-container {
+      background-color: brown;
+      
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      #h1-filtros-text {
+        font-size: 2rem;
+        margin: 1rem 1rem;
+        font-family: ProximaNovaRegular;
+        word-wrap: break-word;
+      }
+      button {
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 0.5rem;
+        text-align: left;
+        font-size: 1.2rem;
+      }
+    }
+    .products-container {
+      background-color: chartreuse;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      .product-item {
+        background-color: cadetblue;
+        border-radius: 7px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        overflow: auto;
+        word-wrap: break-word;
+
+        justify-content: center;
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        .product-textCont {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1rem;
+          p {
+            font-family: ProximaNovaRegular;
+            font-size: 1.6rem;
+            word-wrap: break-word;
+          }
+          #recienllegados-price {
+            font-family: ProximaNovaLight;
+            font-size: 2.2rem;
+            font-weight: 600;
+          }
+        }
+      }
+      .product-item:hover {
+        img {
+          transform: scale(1.05);
+          transition: all 0.2s ease;
+        }
+      }
+
+      .product-item:not(:hover) {
+        img {
+          transform: scale(1);
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+}
